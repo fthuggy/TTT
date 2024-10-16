@@ -51,7 +51,7 @@ function changePlayer() {
 function checkWinner() {
     let roundWon = false;
 
-    // Fixade här: Ändrat "1" till "i" i loopen.
+  
     for (let i = 0; i < winConditions.length; i++) {
         const condition = winConditions[i];
         const cellA = options[condition[0]];
@@ -71,7 +71,7 @@ function checkWinner() {
         statusText.textContent = `${currentPlayer} wins!`;
         running = false;
     } 
-    else if (!options.includes("")) {  // Fixade här: Det här kontrollerar korrekt om det är oavgjort.
+    else if (!options.includes("")) { 
         statusText.textContent = `Draw!`;
         running = false;
     } 
